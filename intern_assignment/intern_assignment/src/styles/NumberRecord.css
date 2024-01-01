@@ -1,0 +1,47 @@
+.numberRecordMainContainer{
+    width: 100%;
+    height: auto;
+    background-color: whitesmoke;
+}
+.numberRecordMainDiv{
+    margin: auto;
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.numberRecordDiv{
+    margin: 2rem 0;
+    width: 250px;
+    color: #12406f;
+}
+.numberRecordDiv>p:nth-child(1){
+    font-size: .9em;
+    font-weight: 500;
+
+}
+.numberRecordDiv>p{
+    margin: 0%;
+    font-size: .8em;
+}
+.numberRecordDiv>h3{
+    margin: .5em 0;
+    font-size: 1em;
+}
+.numberRecordCount{
+    font-weight: 900;
+    font-size: 3rem;
+}
+.numberRecordSign{
+    font-weight: 900;
+    font-size: 2rem;
+}
+@media all and (max-width:570px) {
+    .numberRecordDiv{
+        margin: 2rem auto;
+        text-align: center;
+        width: 250px;
+        color: #12406f;
+    }
+}

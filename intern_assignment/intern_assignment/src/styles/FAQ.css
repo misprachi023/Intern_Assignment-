@@ -1,0 +1,34 @@
+.faqHeading{
+    margin: 3rem 0;
+    text-align: center;
+    color: #12406f;
+}
+.quesDiv{
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    color: #808080;
+    border-bottom: 1px solid #76767668;
+}
+.ansDiv{
+    margin: auto;
+    width: 90%;
+    color: #12406f;
+    border-bottom: 1px solid #12406f;
+}
+.quesDiv>button{
+    background: none;
+    border: none;
+}
+.plus, .minus{
+    width: 1.5rem;
+}
+.quesDiv>p,.ansDiv>p{
+    font-size: .9rem;
+}
+@media all and (max-width:480px) {
+    .quesDiv>p,.ansDiv>p{
+        font-size: .8rem;
+    }
+}

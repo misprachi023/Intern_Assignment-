@@ -1,0 +1,109 @@
+#navbar{
+    width: 100%;
+    height: 4rem;
+    margin-top: 0%;
+    background-color: #12406F;
+}
+.navbarMainDiv{
+    width: 90%;
+    height: 4rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.brandLogoDiv{
+    margin: auto 0px;
+}
+.brandLogoDiv>h1{
+    margin: auto;
+    color: white;
+}
+.menuAndBtnMainDiv{
+    width: auto;
+    display: flex;
+}
+.navbarMenuDiv{
+    display: flex;
+    justify-content: center;
+    column-gap: 1.5rem;
+}
+.menuDiv{
+    width: auto;
+    color: white;
+    font-size: .9em;
+    margin: auto;
+}
+.navbarMenuDownArrow{
+    color: white;
+    font-size: .6rem;
+
+}
+.navbarSearchIconDiv{
+    margin: auto 10px;
+}
+.searchIcon{
+    font-size: 2rem;
+    color: white;
+}
+.navbarBtn, .navbarMenuBtn{
+    margin: auto;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #12406F;
+    background-color: white;
+    border: 3px solid transparent;
+    border-radius: .8em;
+    padding: 8px 12px;
+    transition: all .5s ease-in-out;
+}
+.navbarBtn:hover, .navbarMenuBtn:hover{
+    color: white;
+    background-color: #12406F;
+    border: 3px solid white;
+    cursor: pointer;
+}
+.navbarDrawer{
+    margin: auto;
+    margin-left: 10px;
+    display: none;
+}
+@media all and (min-width:768px) and (max-width:970px) {
+    .navbarMainDiv{
+        width: 95%;
+    }
+    .navbarMenuDiv{
+        column-gap: .5rem;
+    }
+    .menuDiv{
+        font-size: .7em;
+    }
+}
+@media all and (min-width:480px) and (max-width:768px) {
+    .navbarMenuDiv{
+        display: none;
+    }
+    .navbarDrawer{
+        display: block;
+    }
+}
+@media all and (max-width:480px) {
+    .navbarMenuDiv{
+        display: none;
+    }
+    .navbarDrawer{
+        display: block;
+    }
+    .navbarBtn, .navbarMenuBtn{
+        font-size: .8rem;
+        font-weight: 600;
+        border: 2px solid transparent;
+        border-radius: .6em;
+        padding: 5px 8px;
+    }
+    .navbarBtn:hover, .navbarMenuBtn:hover{
+        border: 2px solid white;
+    }
+    .navbarDrawer{
+        margin-left: 8px;
+    }
+}

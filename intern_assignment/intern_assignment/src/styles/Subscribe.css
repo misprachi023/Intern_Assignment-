@@ -1,0 +1,120 @@
+.subscribeMainDiv{
+    margin: 3rem auto -3px;
+    width: 90%; 
+    display: flex;
+    justify-content: space-between;
+}
+.subscribeTextContentDiv{
+    width: 50%;
+}
+.subscribeTextContentDiv>h1{
+    margin-bottom: 0;
+    color: #12406f;
+}
+.subscribeTextContentDiv>p{
+    width: 65%;
+    color: #808080;
+    font-size: .8em;
+}
+.subscribeTextContentDiv>input{
+    width: 50%;
+    color: #808080;
+    height: 2rem;
+    padding: .3em .8em;
+    border-radius: .4em;
+    border: 3px solid transparent;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.subscribeTextContentDiv>button{
+    margin-left: 1rem;
+    padding: 1em 2em;
+    border-radius: .6em;
+    color: white;
+    background-color: #12406f;
+    border: 3px solid transparent;
+    transition: all .5s ease-in-out;
+}
+.subscribeTextContentDiv>button:hover{
+    color: #12406f;
+    background-color: white;
+    border: 3px solid #12406f;
+}
+.subscribeImgDiv{
+    width: 50%;
+}
+.subscribeImgDiv>img{
+    width: 100%;
+    height: 100%;
+}
+@media all and (min-width:480px) and (max-width:932px) {
+    .subscribeImgDiv{
+        width: 100%;
+        height: 250px;
+    }
+    .subscribeImgDiv>img{
+        position: relative;
+        z-index: 1;
+    }
+    .subscribeTextContentDiv{
+        width: 90%;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(4px);
+        z-index: 2;
+    }
+    .subscribeTextContentDiv>p{
+        width: 80%;
+        font-weight: bold;
+        color: #000000;
+        font-size: .8em;
+    }
+}
+@media all and (max-width:480px) {
+    .subscribeImgDiv{
+        width: 100%;
+        height: 260px;
+    }
+    .subscribeImgDiv>img{
+        position: relative;
+        z-index: 1;
+    }
+    .subscribeTextContentDiv{
+        width: 90%;
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(4px);
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+    }
+    .subscribeTextContentDiv>h1{
+        margin: 0;
+        color: #12406f;
+    }
+    .subscribeTextContentDiv>p{
+        width: 100%;
+        font-weight: bold;
+        color: #000000;
+        font-size: .8em;
+    }
+    .subscribeTextContentDiv>input{
+        width: 80%;
+        color: #808080;
+        height: 2rem;
+        padding: .1em .4em;
+        border-radius: .4em;
+        border: 3px solid transparent;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    .subscribeTextContentDiv>button{
+        width: 50%;
+        height: 2.5rem;
+        margin: 1rem 0rem;
+        padding: .2em .4em;
+        border-radius: .6em;
+        color: white;
+        background-color: #12406f;
+        border: 3px solid transparent;
+        transition: all .5s ease-in-out;
+    }
+}

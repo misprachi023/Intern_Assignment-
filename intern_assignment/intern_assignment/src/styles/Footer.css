@@ -1,0 +1,130 @@
+.footerMainDiv {
+    width: 100%;
+    position: relative;
+  }
+  .footerImgDiv{
+    margin: 0;
+    height: 280px;
+  }
+  .footerImgDiv > img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    object-fit: cover;
+    z-index: 1;
+  }
+  
+  .footerContentMainDiv {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    z-index: 2;
+  }
+.contactDiv{
+    width: 20%;
+}
+.headOfficeDiv{
+    width: 33%;
+}
+.followDiv{
+    width: 45%;
+    text-align: center;
+}
+.followIconDiv{
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.followIconDiv>img{
+    width: 2rem;
+    height: 2rem;
+}
+.headOffice{
+    display: flex;
+    column-gap: .8rem;
+}
+.headOffice>img{
+    width: .8rem
+}
+.headOffice>p, .contactDiv>p{
+    margin: 5px 0;
+    font-size: .8rem;
+}
+.endDiv{
+    margin: 0%;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    background-color: #12406f;
+}
+.endDiv>p{
+    color: white;
+    font-size: .8rem;
+}
+
+@media all and (min-width:480px) and (max-width:768px) {
+.footerImgDiv{
+  height: 500px;
+}
+.footerImgDiv > img {
+  height: 500px !important ;
+}
+.footerContentMainDiv {
+  top: 45%;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+.contactDiv{
+    width: 70%;
+}
+.headOfficeDiv{
+    width: 100%;
+}
+.followDiv{
+    width: 100%;
+    text-align: center;
+}
+.followIconDiv>img{
+  width: 1.5rem;
+  height: 1.5rem;
+}
+}
+@media all and (max-width:480px) {
+    .footerImgDiv{
+        height: 600px;
+    }
+    .footerImgDiv > img {
+      height: 600px !important ;
+    }
+    .footerContentMainDiv{
+      top: 45%;
+      flex-direction: column;
+      row-gap: 1rem;
+      justify-content: space-between;
+    }
+    .contactDiv,.followDiv,.headOfficeDiv{
+        width: 100%;
+        text-align: center;
+        padding-bottom: 10px;
+        border-bottom: 2px solid whitesmoke;
+    }
+    .followIconDiv{
+        width: 100%;
+    }
+    .followIconDiv>img{
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+    .headOffice>p{
+        text-align: start;
+    }
+}
+
+
